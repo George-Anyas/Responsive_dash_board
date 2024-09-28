@@ -1,6 +1,6 @@
 class DrawerItemModel {
-  String tilte;
-  String image;
+  final String tilte;
+  final String image;
 
-  DrawerItemModel({required this.tilte, required this.image});
+  const DrawerItemModel({required this.tilte, required this.image});
 }
