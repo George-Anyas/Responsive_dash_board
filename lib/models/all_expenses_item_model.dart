@@ -1,6 +1,6 @@
 class AllExpensesItemModel {
   final String image, title, date;
-  final double price;
+  final String price;
 
   const AllExpensesItemModel(
       {required this.image,

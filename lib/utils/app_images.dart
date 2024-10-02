@@ -2,50 +2,51 @@
 class Assets {
   Assets._();
 
-  /// Assets for assetsImagesCardReceive
+  /// Assets for imagesCardReceive
   /// assets/images/card-receive.svg
-  static const String assetsImagesCardReceive =
-      "assets/images/card-receive.svg";
+  static const String imagesCardReceive = "assets/images/card-receive.svg";
 
-  /// Assets for assetsImagesCardSend
+  /// Assets for imagesCardSend
   /// assets/images/card-send.svg
-  static const String assetsImagesCardSend = "assets/images/card-send.svg";
+  static const String imagesCardSend = "assets/images/card-send.svg";
 
-  /// Assets for assetsImagesDashboard
+  /// Assets for imagesDashboard
   /// assets/images/dashboard.svg
-  static const String assetsImagesDashboard = "assets/images/dashboard.svg";
+  static const String imagesDashboard = "assets/images/dashboard.svg";
 
-  /// Assets for assetsImagesFrame
+  /// Assets for imagesFrame
   /// assets/images/Frame.svg
-  static const String assetsImagesFrame = "assets/images/Frame.svg";
+  static const String imagesFrame = "assets/images/Frame.svg";
 
-  /// Assets for assetsImagesLogout
+  /// Assets for imagesLogout
   /// assets/images/logout.svg
-  static const String assetsImagesLogout = "assets/images/logout.svg";
+  static const String imagesLogout = "assets/images/logout.svg";
 
-  /// Assets for assetsImagesMask group
-  /// assets/images/Mask group.svg
-  static const String assetsImagesMaskgroup = "assets/images/Mask group.svg";
+  /// Assets for imagesMaskgroup
+  /// assets/images/Maskgroup.svg
+  static const String imagesMaskgroup = "assets/images/Maskgroup.svg";
 
-  /// Assets for assetsImagesMyInvestments
+  /// Assets for imagesMoneys2x
+  /// assets/images/moneys@2x.svg
+  static const String imagesMoneys2x = "assets/images/moneys@2x.svg";
+
+  /// Assets for imagesMyInvestments
   /// assets/images/my_investments.svg
-  static const String assetsImagesMyInvestments =
-      "assets/images/my_investments.svg";
+  static const String imagesMyInvestments = "assets/images/my_investments.svg";
 
-  /// Assets for assetsImagesMyTransaction
+  /// Assets for imagesMyTransaction
   /// assets/images/my_transaction.svg
-  static const String assetsImagesMyTransaction =
-      "assets/images/my_transaction.svg";
+  static const String imagesMyTransaction = "assets/images/my_transaction.svg";
 
-  /// Assets for assetsImagesSetting22x
+  /// Assets for imagesSetting22x
   /// assets/images/setting-2@2x.svg
-  static const String assetsImagesSetting22x = "assets/images/setting-2@2x.svg";
+  static const String imagesSetting22x = "assets/images/setting-2@2x.svg";
 
-  /// Assets for assetsImagesStatics
+  /// Assets for imagesStatics
   /// assets/images/statics.svg
-  static const String assetsImagesStatics = "assets/images/statics.svg";
+  static const String imagesStatics = "assets/images/statics.svg";
 
-  /// Assets for assetsImagesWallet2
+  /// Assets for imagesWallet2
   /// assets/images/wallet-2.svg
-  static const String assetsImagesWallet2 = "assets/images/wallet-2.svg";
+  static const String imagesWallet2 = "assets/images/wallet-2.svg";
 }

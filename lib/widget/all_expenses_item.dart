@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dash_bord/models/all_expenses_item_model.dart';
 import 'package:responsive_dash_bord/widget/all_expenses_item_header.dart';
 
 class AllExpensesItem extends StatelessWidget {
-  const AllExpensesItem({super.key});
-
+  const AllExpensesItem({super.key, required this.itemModel});
+  final AllExpensesItemModel itemModel;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -17,8 +18,12 @@ class AllExpensesItem extends StatelessWidget {
             borderRadius: BorderRadius.circular(12),
           ),
           color: Colors.white),
-      child: const Column(
-        children: [AllExpensesItemHeader()],
+      child: Column(
+        children: [
+          AllExpensesItemHeader(
+            image: itemModel.image,
+          )
+        ],
       ),
     );
   }

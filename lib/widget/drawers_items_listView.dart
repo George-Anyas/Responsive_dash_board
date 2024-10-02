@@ -17,23 +17,23 @@ class _DrawersItemsListViewState extends State<DrawersItemsListView> {
 
   final List<DrawerItemModel> items = [
     const DrawerItemModel(
-      image: Assets.assetsImagesDashboard,
+      image: Assets.imagesDashboard,
       tilte: 'Dashboard',
     ),
     const DrawerItemModel(
-      image: Assets.assetsImagesMyTransaction,
+      image: Assets.imagesMyTransaction,
       tilte: 'My Transaction',
     ),
     const DrawerItemModel(
-      image: Assets.assetsImagesStatics,
+      image: Assets.imagesStatics,
       tilte: 'Statistics',
     ),
     const DrawerItemModel(
-      image: Assets.assetsImagesWallet2,
+      image: Assets.imagesWallet2,
       tilte: 'Wallet Account',
     ),
     const DrawerItemModel(
-      image: Assets.assetsImagesMyInvestments,
+      image: Assets.imagesMyInvestments,
       tilte: 'My Investments',
     ),
   ];
