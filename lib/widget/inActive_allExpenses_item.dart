@@ -17,10 +17,6 @@ class InActiveAllExpensesItem extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
       decoration: ShapeDecoration(
           shape: RoundedRectangleBorder(
-            side: const BorderSide(
-              width: 1,
-              color: Color(0xFFF1F1F1F),
-            ),
             borderRadius: BorderRadius.circular(12),
           ),
           color: Colors.white),
@@ -70,18 +66,17 @@ class ActiveAllExpensesItem extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
       decoration: ShapeDecoration(
-          shape: RoundedRectangleBorder(
-            side: const BorderSide(
-              width: 1,
-              color: Color(0xFFF1F1F1F),
-            ),
-            borderRadius: BorderRadius.circular(12),
-          ),
-          color: Colors.white),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(12),
+        ),
+        color: Color(0xff4EB7F2),
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           AllExpensesItemHeader(
+            imageBackGround: Color.fromARGB(255, 255, 255, 255),
+            imageColor: Colors.blue,
             image: itemModel.image,
           ),
           const SizedBox(
@@ -89,21 +84,24 @@ class ActiveAllExpensesItem extends StatelessWidget {
           ),
           Text(
             itemModel.title,
-            style: AppStyles.styleMedium16(context),
+            style:
+                AppStyles.styleMedium16(context).copyWith(color: Colors.white),
           ),
           const SizedBox(
             height: 8,
           ),
           Text(
             itemModel.date,
-            style: AppStyles.styleRegular14(context),
+            style: AppStyles.styleRegular14(context)
+                .copyWith(color: Color(0xffFAFAFA)),
           ),
           const SizedBox(
             height: 16,
           ),
           Text(
             itemModel.price,
-            style: AppStyles.styleSemiBold24(context),
+            style: AppStyles.styleSemiBold24(context)
+                .copyWith(color: Colors.white),
           )
         ],
       ),
