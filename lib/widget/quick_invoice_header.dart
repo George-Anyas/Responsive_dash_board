@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_bord/utils/app_style.dart';
 
@@ -12,7 +11,7 @@ class QuickInvoiceHeader extends StatelessWidget {
         Text(
           'Quick Invoice',
           style: AppStyles.styleMedium20(context)
-              .copyWith(color: Color(0xff4EB7F2)),
+              .copyWith(color: Color(0xff064061)),
         ),
         const Spacer(),
         Container(
