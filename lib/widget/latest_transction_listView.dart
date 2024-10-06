@@ -22,8 +22,18 @@ class LatestTransctionsListView extends StatelessWidget {
   ];
   @override
   Widget build(BuildContext context) {
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+        children: items
+            .map((e) => SingleChildScrollView(
+                child:
+                    IntrinsicWidth(child: UserInfoListTile(userInfoModel: e))))
+            .toList(),
+      ),
+    );
     return SizedBox(
-      height: 800,
+      height: 80,
       child: ListView.builder(
         itemCount: items.length,
         scrollDirection: Axis.horizontal,
