@@ -11,7 +11,7 @@ class RangeOptions extends StatelessWidget {
         shape: RoundedRectangleBorder(
           side: const BorderSide(
             width: 1,
-            color: Color(0xff1f1f1),
+            color: Color(0xFFF1f1f1),
           ),
           borderRadius: BorderRadius.circular(16),
         ),

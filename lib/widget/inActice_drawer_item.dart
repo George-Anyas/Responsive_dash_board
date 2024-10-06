@@ -24,29 +24,3 @@ class InActiveDrawer extends StatelessWidget {
     );
   }
 }
-
-class ActiveDrawerItem extends StatelessWidget {
-  const ActiveDrawerItem({
-    super.key,
-    required this.drawerItemModel,
-  });
-
-  final DrawerItemModel drawerItemModel;
-
-  @override
-  Widget build(BuildContext context) {
-    return ListTile(
-      leading: SvgPicture.asset(drawerItemModel.image),
-      title: Text(
-        drawerItemModel.tilte,
-        style: AppStyles.styleBold16(
-          context,
-        ),
-      ),
-      trailing: Container(
-        width: 3.27,
-        color: Color(0xff4EB7F2),
-      ),
-    );
-  }
-}

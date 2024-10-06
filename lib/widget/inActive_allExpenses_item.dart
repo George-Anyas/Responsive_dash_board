@@ -69,13 +69,13 @@ class ActiveAllExpensesItem extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
         ),
-        color: Color(0xff4EB7F2),
+        color: const Color(0xff4EB7F2),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           AllExpensesItemHeader(
-            imageBackGround: Color.fromARGB(255, 255, 255, 255),
+            imageBackGround: const Color.fromARGB(255, 255, 255, 255),
             imageColor: Colors.blue,
             image: itemModel.image,
           ),
@@ -93,7 +93,7 @@ class ActiveAllExpensesItem extends StatelessWidget {
           Text(
             itemModel.date,
             style: AppStyles.styleRegular14(context)
-                .copyWith(color: Color(0xffFAFAFA)),
+                .copyWith(color: const Color(0xffFAFAFA)),
           ),
           const SizedBox(
             height: 16,

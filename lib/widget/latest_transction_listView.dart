@@ -32,16 +32,16 @@ class LatestTransctionsListView extends StatelessWidget {
             .toList(),
       ),
     );
-    return SizedBox(
-      height: 80,
-      child: ListView.builder(
-        itemCount: items.length,
-        scrollDirection: Axis.horizontal,
-        itemBuilder: (context, index) {
-          return IntrinsicWidth(
-              child: UserInfoListTile(userInfoModel: items[index]));
-        },
-      ),
-    );
+    // return SizedBox(
+    //   height: 80,
+    //   child: ListView.builder(
+    //     itemCount: items.length,
+    //     scrollDirection: Axis.horizontal,
+    //     itemBuilder: (context, index) {
+    //       return IntrinsicWidth(
+    //           child: UserInfoListTile(userInfoModel: items[index]));
+    //     },
+    //   ),
+    // );
   }
 }

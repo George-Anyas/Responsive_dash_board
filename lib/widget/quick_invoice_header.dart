@@ -11,7 +11,7 @@ class QuickInvoiceHeader extends StatelessWidget {
         Text(
           'Quick Invoice',
           style: AppStyles.styleMedium20(context)
-              .copyWith(color: Color(0xff064061)),
+              .copyWith(color: const Color(0xff064061)),
         ),
         const Spacer(),
         Container(
