@@ -37,9 +37,19 @@ class QuickInvoiceForm extends StatelessWidget {
             Expanded(child: TitleTextFiled(title: 'Item mount', hint: 'USD'))
           ],
         ),
+        SizedBox(
+          height: 24,
+        ),
         Row(
           children: [
-            Expanded(child: CustomBotton()),
+            Expanded(
+                child: CustomBotton(
+              textColor: Color(0xff4EB7F2),
+              backGroundColor: Color(0xffFFFFFF),
+            )),
+            SizedBox(
+              width: 24,
+            ),
             Expanded(child: CustomBotton())
           ],
         )
