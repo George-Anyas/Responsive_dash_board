@@ -10,20 +10,20 @@ class CustomTextField extends StatelessWidget {
       decoration: InputDecoration(
         hintText: hint,
         hintStyle: AppStyles.styleRegular16(context)
-            .copyWith(color: Color(0xffAAAAAA)),
+            .copyWith(color: const Color(0xffAAAAAA)),
         filled: true,
-        fillColor: Color(0xffFAFAFA),
-        border: BuildBorder(),
-        enabledBorder: BuildBorder(),
-        focusedBorder: BuildBorder(),
+        fillColor: const Color(0xffFAFAFA),
+        border: buildBorder(),
+        enabledBorder: buildBorder(),
+        focusedBorder: buildBorder(),
       ),
     );
   }
 }
 
-OutlineInputBorder BuildBorder() {
+OutlineInputBorder buildBorder() {
   return OutlineInputBorder(
-      borderSide: BorderSide(color: Color(0xffFAFAFA)),
+      borderSide: const BorderSide(color: Color(0xffFAFAFA)),
       borderRadius: BorderRadius.circular(
         12,
       ));
