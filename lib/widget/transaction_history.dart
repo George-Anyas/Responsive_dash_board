@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:responsive_dash_bord/utils/app_style.dart';
 
 import 'package:responsive_dash_bord/widget/transaction_history_header.dart';
+import 'package:responsive_dash_bord/widget/transaction_history_listview.dart';
 
 class TransactionHistory extends StatelessWidget {
   const TransactionHistory({super.key});
@@ -19,7 +20,11 @@ class TransactionHistory extends StatelessWidget {
           '13 April 2022',
           style: AppStyles.styleMedium16(context)
               .copyWith(color: const Color(0xffAAAAAA)),
-        )
+        ),
+        const SizedBox(
+          height: 16,
+        ),
+        const TransactionHistoryListview()
       ],
     );
   }
