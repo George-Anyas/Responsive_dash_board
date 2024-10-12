@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:responsive_dash_bord/widget/custom_background_container.dart';
+import 'package:responsive_dash_bord/widget/income_chart.dart';
 import 'package:responsive_dash_bord/widget/income_section_header.dart';
 
 class IncomeSection extends StatelessWidget {
@@ -8,9 +9,16 @@ class IncomeSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomBackgroundContainer(
+    return const CustomBackgroundContainer(
       child: Column(
-        children: [IncomeSectionHeader()],
+        children: [
+          IncomeSectionHeader(),
+          Expanded(
+            child: Row(
+              children: [Expanded(child: IncomeChart())],
+            ),
+          )
+        ],
       ),
     );
   }
