@@ -6,7 +6,7 @@ class IncomeChart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return PieChart(getChartData());
+    return AspectRatio(aspectRatio: 1, child: PieChart(getChartData()));
   }
 
   PieChartData getChartData() {
