@@ -12,7 +12,7 @@ class ItemDetails extends StatelessWidget {
         width: 12,
         height: 12,
         decoration: ShapeDecoration(
-            color: incomeDetailsModel.color, shape: OvalBorder()),
+            color: incomeDetailsModel.color, shape: const OvalBorder()),
       ),
       title: Text(
         incomeDetailsModel.title,
