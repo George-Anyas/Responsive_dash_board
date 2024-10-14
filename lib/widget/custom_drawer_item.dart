@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-
 import 'package:responsive_dash_bord/models/drawer_item_model.dart';
 import 'package:responsive_dash_bord/models/user_info_model.dart';
-
 import 'package:responsive_dash_bord/utils/app_images.dart';
-
 import 'package:responsive_dash_bord/widget/drawers_items_listView.dart';
 import 'package:responsive_dash_bord/widget/inActice_drawer_item.dart';
 import 'package:responsive_dash_bord/widget/user_info_list_tile.dart';
@@ -15,7 +12,7 @@ class CustomDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.of(context).size.width * .7,
+      width: MediaQuery.of(context).size.width * .8,
       color: Colors.white,
       child: const CustomScrollView(
         slivers: [
@@ -51,7 +48,7 @@ class CustomDrawer extends StatelessWidget {
                 ),
                 SizedBox(
                   height: 48,
-                )
+                ),
               ],
             ),
           ),
