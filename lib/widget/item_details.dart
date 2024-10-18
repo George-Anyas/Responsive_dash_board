@@ -7,6 +7,36 @@ class ItemDetails extends StatelessWidget {
   final ItemDetailsModel incomeDetailsModel;
   @override
   Widget build(BuildContext context) {
+    // return Padding(
+    //   padding: const EdgeInsets.only(left: 16.0),
+    //   child: FittedBox(
+    //     fit: BoxFit.scaleDown,
+    //     child: Row(
+    //       children: [
+    //         Container(
+    //           width: 12,
+    //           height: 12,
+    //           decoration: ShapeDecoration(
+    //               color: incomeDetailsModel.color, shape: const OvalBorder()),
+    //         ),
+    //         SizedBox(
+    //           width: 12,
+    //         ),
+    //         Text(
+    //           incomeDetailsModel.title,
+    //           style: AppStyles.styleRegular16(context),
+    //         ),
+    //         SizedBox(
+    //           width: 24,
+    //         ),
+    //         Text(
+    //           incomeDetailsModel.value,
+    //           style: AppStyles.styleMedium16(context),
+    //         ),
+    //       ],
+    //     ),
+    //   ),
+    // );
     return ListTile(
       leading: Container(
         width: 12,
