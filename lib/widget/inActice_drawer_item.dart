@@ -15,10 +15,14 @@ class InActiveDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: SvgPicture.asset(drawerItemModel.image),
-      title: Text(
-        drawerItemModel.tilte,
-        style: AppStyles.styleMedium16(
-          context,
+      title: FittedBox(
+        alignment: Alignment.centerLeft,
+        fit: BoxFit.scaleDown,
+        child: Text(
+          drawerItemModel.tilte,
+          style: AppStyles.styleMedium16(
+            context,
+          ),
         ),
       ),
     );
